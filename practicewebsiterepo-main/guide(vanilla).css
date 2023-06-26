@@ -1,0 +1,193 @@
+.container {
+  background-color: blueviolet;
+  width: 334px;
+  height: 334px;
+  /* background-image: url("th.jfif"); */
+  /* image background size */
+  /* background-size: contain; */
+  /* contain make the image fit in the box */
+  /* stretches the image to cover the whole box and not repeat*/
+  /* background-size:cover; */
+  border: black solid 3px;
+  /* background-repeat: no-repeat; */
+  /* background position property */
+  /* background-position: bottom; */
+  /* margin: auto;  gives automatic equal spacing from both left and right */
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  /* border-box considers the whole container and its content including padding and border as a whole */
+  box-sizing: border-box;
+}
+
+/* background image repeat property*/
+/*body {
+  background-image: url("th.jfif");
+  background-repeat: no-repeat; } */
+
+ CSS BOX MODEL 
+/* how to calculate the total hieght of an element*/
+/* Total height = height + Top/bottom padding + Top/bottom border + Top/bottom margin */
+
+.container {
+  margin: 20px 30px 20px 40px;
+  /* you can also provide size of an element like this 
+  first(top) second(right) third(bottom) fourth(left) consider an example of a "CLOCK ARM" */
+  /* margin: 2px 4px; */
+  /* only two values so first(top+bottom) second(left+right) */
+
+  /* Border Properties */
+  /* border-width: 3px solid red; */
+  border-radius: 10px;
+  /* used to round up the container */
+
+  /* Margin Collapse */
+  /* if the margins of two containers are overlapping the resultant margin will be the margin which has the
+  greater value and the other one will collapse and if both have the same margin its not added but hey used the
+  same one margin*/
+  /* if the container is present inside an already exsisting container then the child container will be 
+  considered a content of the parent container  */
+}
+
+ DISPLAY PROPERTIES IN CSS 
+
+/* inline elements(take up as much space as needed) block elements(take up whole width of the screen*/
+/* display:inline; */
+/* display inline property converts the block level elements into inline element it also effects the size of the 
+  container as it takes up as much space as needed and overwrites the height and width given by you and 
+  top&bottom margin/padding is also not allowed */
+/* display:block; */
+/* it makes the element block level and also leaveas one line before and after the element */
+/* display:inline-block; */
+/* similar to inline but height width and margin/padding ar e allowed */
+/* text-align:center; */
+/* horizontally allign text within a container */
+
+/* Text Styling Properties */
+/* text-decoration:underline;  make the text underline overline etc. */
+/* text-transform:capitalize; makes the text uppercase or lower case */
+/*line-height: 0.7px; it increases and decreases the distance between lines in a paragraph  */
+/* font-size: 23px increases and decrease the font size of the text of content */
+/* font-family: 'courier new', courier, monospace;  it used a fallin property that if the font is not availaible 
+  the second then the 3rd font is rendered also always use google fonts and web save fonts */
+
+/* Use MDN instead of chatgpt for coding qeuries*/
+
+ SIZE, POSITION, PIXELS 
+
+/* Units */
+/* (Pixels) are not responsive to the device they are being used on so they are not to be used in a responsive design */
+/* (em) em unit is use mainly for fonts and it multiplies the font size value of the parent element with the value of em 
+  for example parent conatainer has ffont size of 32px and i give the child element 3em it will multiply with 32 to give 96px total
+  font size*/
+/* (rem) rem is used to resize elements relative to the root font size default of the html tag */
+/* rem and em are used if you want to resize the whole page font relative to a paticular coresponding element */
+/* (vm) it is used to make responsive design and responds to the availaible view port of the users device so 
+an elemnt with 50vw means that it will take up 50% of the users device view port */
+/* (vw) used in height case everything else same as above */
+/* (%) used to change height/width relative to the parent element use when want to size container with respect to parent element*/
+
+/* Min/Max hieght */
+/* min-height: 30vh; this means that the minimum height of my container cannot go under 3ovh*/
+/* max-height: 30vh; this means that the maximum height that my container can achieve is 30vh */
+
+/* Min/Max width */
+/* min-width: 30vh; this means that the minimum width of my container cannot go under 3ovh*/
+/* max-width: 30vh; this means that the minimum width of my container cannot go above 3ovh*/
+
+ Position Property V.Important*
+/* position:static; now this is the default position of an element in the work flow has no effect and you cannot use the top/bottom/left/right/z-index */
+/* position:relative; now the element is out of the document flow and you can move the element freely using top/bottom/left/right/z-index */
+/* position:absolute; the element starts to move with respect to its parent element only under the condition if you make the parent container position relative */
+/* position:fixed; if i want to move an element relative to the browser window it is used it is typically used when consider if i have a continer with a scroll wheel 
+and the user used the scroll if the child element has fixed position it will not move from its positon in the container Ex. "Chat with us option" */
+/* position:sticky; it is used to  property is used to make an element stick to its container or the viewport when scrolling, based on its position within the document flow. */
+
+/* z-index:10;  which ever element has the highest z-index value it will show on top of the browser and other elements of the webpage with lower z-index value 
+will not go over it and stay under while scrolling a webpage down  z-index is only applied after using a position property*/
+
+/* list-style: square inside url(); it is used to design bullet points inside of a list and the inside and url check on mdn */
+
+/* (float:left;/right;) it floats the elements left or right in one direction */
+/* (clear:left;/right;) this property ensures that if you float an item to the left clear:right; would ensure that no item floats to its left  */
+/* the float property is seldomly used because of its complexity instead we use flex box */
+
+  FLEX BOX M.Important
+
+/* CHECK OUT THIS LINK (https://dzone.com/storage/temp/13385210-1588684788888.png) for flex box image concept */
+
+/* the main axis and the cross axis flips if our elements are in vertical */
+
+ FLEX BOX ACTIVITY 
+
+/* These are all the properties that can only be used in a flex container and not on the internal elements or boxes */
+/* .flex-container { */
+/* display: flex; used to initialize a flex box in a container it become a flex box as show in the above image */
+/* flex-direction: ;  used to define the direction in which elements are laid in a flex box it can be in  */
+/* row(default)/row-reverse/column/column-reverse */
+/* flex-wrap: wrap; this is used to wrap elements when you crop screen or according to the view port */
+/* justify-content: center;  allign items along the along the main axis in a flex box  */
+/* align-items: center; aligne items along the cross axis it has different values like flex end */
+/* align-content: center; aligns a flex containers lines if there is extra sapce between the elements in the cross axis */
+
+/* these are the prooperties that can be applied to single item or element inside a flex box */
+/* .box1 { */
+/* order: 3; controls the order of the element on which this is applies inside the flex container with respect to other elements inside the flex container */
+/* align-self: flex-end; it removes the alignment properties applied to this particular indiviual element and makes it move in along the cross axis */
+/* flex-grow: 3; it is used to increase the size of an element (mostly along the cross axis/width) respective to the rest of the items inside the flex box */
+/* flex-shrink: 3; it is used to shrink the size of elements inside the flex box with respect to other items inside the container it is used mostly when is overflowing outside
+  of the container */
+
+ CSS GRID LAYOUT AND MEDIA QUERIES 
+/* grid layout */
+/* display: grid; this is used to initialize a container as a grid */
+/* grid-row-gap:3px; it is used to adjust space between the rows of a grid */
+/* grid-column-gap:9px; it is used to adjust space between the columns of a grid */
+/* grid-gap: 3px 9px ; you can write both above in this format it is a shorthand */
+/*   grid-template-columns: auto auto; it is used to increase the number of columns inside a grid and them more auto used the more number of columns  */
+/* grid-template-columns: auto auto; it is used to increase the number of rows inside a grid and them more auto used the more number of columns  you can even increase the size of the grid boxes using values 
+  instead of auto */
+/* Understand the concept of grid lines by going to this image:(https://th.bing.com/th/id/R.8c58e18eee65b5c3a82d72d6e77c0223?rik=MzU6YQUb7bqk7Q&pid=ImgRaw&r=0) */
+/* grid-row: 1/3; it will start the box from 1st row line downwards direction and end on the 3rd line of the grid */
+/* grid_row: 1/ span3; it will start from line number 1 and take up the space equilent of 3 (items) in the row of the grid and fill them*/
+/* grid-column: 1/3; it will start the box from 1st column line sideways direction and end at the exact 3rd line of the grid */
+/* grid_column: 1/ span3; it will start from line number 1 and take up the space equilent of 3 (items) in the column of the grid and fill them*/
+
+/* DONT alwats use grid css in every case instead prefer use of css flexbox as it is a more responsive design and use it only if you need a very big container in tabluar form */
+
+ MEDIA QUERIES 
+/* media queries are used when if my users device reaches a specific aspect ratio a new css rule is triggered in place of the older one */
+/* used to apply a css only when a certain condition is true */
+
+/* @media screen and (max-width:800px){
+  body{
+    background-color:black;
+  } 
+  .container{
+    background-color:red;
+  }
+ } */
+
+ TRANSFORM ANIMATIONS TRANSITIONS 
+/* transform property is used to apply 2D and 3D transformations to an element */
+/* transform-origin: left; where does your transformation start to apply from that is what is decided
+by the origin property allows to change the position of a transformed element 
+2D transform can change on x and y axis while 3D transform can change on z axis aswell */
+
+/* you can use the following 2D transform methods in css */
+/* transform:  ;
+transform: translate(10px, 10px);  it is used to move element both along x axis and y axis
+transform: rotate(0.05turn); it is used to rotate the element
+transxform: scale(4.5,3.4); these functions are used to scale up and scale down an element and element 
+scaleX() scales on x axix
+scaleY() scales on y axix
+skew() skew turns element on the axis provided
+matrix(1, 2, 3, 4, 5) the transform property lets you rotate,scale,skew or rotate an element it modifies the coordinate space of css
+scale()*/
+
+
+/*:root {
+   --main-bg-color: #dbbbf5;}  you can use this property to make a variable in the css and use it for example here we used the property and applied 
+     background-color: var(--main-bg-color); like this and it makes the whole color of the website same */

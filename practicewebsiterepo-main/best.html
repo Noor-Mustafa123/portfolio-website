@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <!-- Include Font Awesome CSS -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark py-2">
+    <div class="container">
+      <a class="navbar-brand" href="#">New Website</a>
+
+      <!-- the burger collapse menu button -->
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navmenu">
+        <!-- simple list for large screen -->
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- showcase -->
+  <section class="text-light text-center p-5" style="background-color: #261132;">
+    <!-- the main section -->
+    <div class="container d-sm-flex">
+      <div class="w-50 mx-auto" style="max-width: 400px;">
+        <h1>This is a Portfolio<span class="text-warning"> Website</span></h1>
+        <p class="lead my-4">
+          Welcome to my web developer portfolio! I showcase my passion for
+          crafting dynamic and visually appealing websites. With a strong
+          focus on user experience and cutting-edge technologies.
+        </p>
+        <button class="btn btn-lg" style="background-color: #fb3640;">
+          Click Here
+        </button>
+      </div>
+      <div class="d-none d-sm-block">
+        <img class="image-fluid w-75" src="image.svg" alt="image" />
+      </div>
+    </div>
+  </section>
+  <!-- signup section -->
+  <section class="text-light p-4" style="background-color: #7b287d;">
+    <div class="container d-lg-flex justify-content-between align-items-center">
+      <div>
+        <h3 style="font-weight: normal;">
+          Sign Up For Newsletter
+        </h3>
+      </div>
+      <!-- input button section -->
+      <div class="input-group mb-3" style="max-width: 768px; width: 70%; padding-top: 15px;">
+        <input type="text" class="form-control" placeholder="@gmail.com" />
+        <span class="input-group-text" id="basic-addon2">Sign Up</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cards section -->
+  <section class="p-5 pb-3">
+    <div class="container">
+      <div class="row text-center">
+        <div class="col-md-4 mb-4">
+          <div class="card text-center">
+            <div class="card-body text-light" style="background-color: #402039;">
+              <i class="fas fa-laptop fa-2x mb-2"></i>
+              <h5 class="card-title mb-2">Laptop</h5>
+              <p class="card-text">
+                Laptop scheme is online now at this time in Pakistan, and all
+                people from the government sector and universities are welcome
+                to apply for it.
+              </p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card text-center">
+            <div class="card-body text-light" style="background-color: #512d4d;">
+              <i class="fas fa-desktop fa-2x mb-2"></i>
+              <h5 class="card-title">Desktop</h5>
+              <p class="card-text">
+                The soaring prices of desktops in Pakistan have become a
+                significant concern for consumers, making it difficult for
+                many to afford the latest models.
+              </p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+          <div class="card text-center">
+            <div class="card-body text-light" style="background-color: #282828;">
+              <i class="fas fa-mobile-alt fa-2x mb-2"></i>
+              <h5 class="card-title">Mobile</h5>
+              <p class="card-text">
+                With the continuous increase in mobile phone prices in
+                Pakistan, owning a flagship device has become a luxury that
+                only a few can afford.
+              </p>
+              <a href="#" class="btn btn-primary">Read More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2nd showcase -->
+  <section class="p-5">
+    <div class="container">
+      <div class="row align-items-center justify-space-between">
+        <div class="col-md p-5">
+          <img src="new.svg" class="img-fluid" alt="" />
+        </div>
+        <div class="col-md p-5">
+          <h2>The Fundamental Projects</h2>
+
+          <p class="lead">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem,
+            enim molestias repudiandae facilis obcaecati earum! Vero
+            temporibus molestias possimus perferendis?
+          </p>
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Cupiditate nostrum architecto natus qui sint necessitatibus
+            inventore alias deleniti veritatis maxime repellat, tempora
+            aliquam quo error. Perspiciatis ipsa assumenda doloribus sequi!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3rd showcase -->
+  <section class="p-5 pt-2">
+    <div class="container">
+      <div class="row align-items-center justify-space-between">
+        <div class="col-md p-5">
+          <h2>My Tech Stack</h2>
+
+          <p class="lead">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem,
+            enim molestias repudiandae facilis obcaecati earum! Vero
+            temporibus molestias possimus perferendis?
+          </p>
+          <p class="lead">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Cupiditate nostrum architecto natus qui sint necessitatibus
+            inventore alias deleniti veritatis maxime repellat, tempora
+            aliquam quo error. Perspiciatis ipsa assumenda doloribus sequi!
+          </p>
+        </div>
+        <div class="col-md p-5">
+          <img src="Laraval.svg" class="img-fluid" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Question accordion -->
+  <section class="p-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 style="font-weight: 600;">Frequently Asked Question</h2>
+      </div>
+      <!-- Accordion -->
+      <div class="accordion accordion-flush" id="accordionFlushExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+              How did you create the accordion functionality for the website?
+            </button>
+          </h2>
+          <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>
+                I implemented the accordion functionality using Bootstrap, a
+                popular front-end framework. By utilizing the Bootstrap
+                accordion component, I was able to easily create collapsible
+                accordion sections for the website. The accordion
+                functionality allows users to expand or collapse content
+                sections, providing a clean and organized user experience.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+              What technologies were used to develop the accordion website?
+            </button>
+          </h2>
+          <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>
+                The accordion website was developed using HTML, CSS, and
+                JavaScript. For the responsive design and interactive
+                features, I leveraged the power of Bootstrap, which provides
+                pre-built components and responsive grid system. Additionally,
+                I used custom CSS to style the accordion elements to match the
+                overall design of the website.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+              Can you explain how the accordion dynamically loads content?
+            </button>
+          </h2>
+          <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+            <div class="accordion-body">
+              <p>
+                Certainly! The accordion dynamically loads content through the
+                use of JavaScript. Instead of hardcoding the content for each
+                accordion item in the HTML, I utilized JavaScript to fetch the
+                content from a data source, such as a JSON file or an API.
+                This dynamic approach allows for easy management and updating
+                of the accordion content without needing to modify the HTML
+                structure. By dynamically populating the content, the website
+                can easily scale and adapt to changes in the content or new
+                additions to the accordion sections.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonial cards section -->
+  <section class="p-5" style="background-color: #0d0628;">
+    <div class="container d-flex justify-content-center align-items-center">
+      <div>
+        <div class="text-center mb-4 text-light">
+          <h2>Testimonials</h2>
+        </div>
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+          <div class="col">
+            <div class="card h-100 rounded" style="width: 18rem;">
+              <img src="https://randomuser.me/api/portraits/men/12.jpg "
+                class="rounded-circle border border-light p-1 mx-auto d-block mt-3" alt="..."
+                style="width: 150px; height: 150px;" />
+              <div class="card-body">
+                <h5 class="card-title">John Doe</h5>
+                <p class="card-text">
+                  "Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Fusce interdum convallis nisl, at condimentum neque pharetra
+                  vel."
+                </p>
+              </div>
+              <div class="card-footer text-muted d-flex justify-content-center align-items-center">
+                <span>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-instagram"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 rounded" style="width: 18rem;">
+              <img src="https://randomuser.me/api/portraits/women/11.jpg"
+                class="rounded-circle border border-light p-1 mx-auto d-block mt-3" alt="..."
+                style="width: 150px; height: 150px;" />
+              <div class="card-body">
+                <h5 class="card-title">Jane Smith</h5>
+                <p class="card-text">
+                  "Nullam id justo gravida, commodo tellus vel, eleifend
+                  dolor. In consectetur mattis lorem, sed pellentesque tellus
+                  elementum ac."
+                </p>
+              </div>
+              <div class="card-footer text-muted d-flex justify-content-center align-items-center">
+                <span>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-facebook"></i>
+                  <i class="fab fa-linkedin"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 rounded" style="width: 18rem;">
+              <img src="https://randomuser.me/api/portraits/women/12.jpg"
+                class="rounded-circle border border-light p-1 mx-auto d-block mt-3" alt="..."
+                style="width: 150px; height: 150px;" />
+              <div class="card-body">
+                <h5 class="card-title">Sarah Williams</h5>
+                <p class="card-text">
+                  "Praesent interdum sapien eget lectus facilisis, sit amet
+                  ullamcorper felis mollis. In gravida dui vitae urna eleifend
+                  pharetra."
+                </p>
+              </div>
+              <div class="card-footer text-muted d-flex justify-content-center align-items-center">
+                <span>
+                  <i class="fab fa-twitter"></i>
+                  <i class="fab fa-instagram"></i>
+                  <i class="fab fa-linkedin"></i>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Include Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+
+  <!-- contact and location section -->
+  <section class="p-5">
+    <div class="container">
+      <div class="row g-4">
+        <!-- Column: Contact Info -->
+        <div class="col-md">
+          <!-- Heading: Contact Info -->
+          <h2>Contact Info</h2>
+          <!-- Form -->
+          <form>
+            <!-- Form Group: Name -->
+            <div class="mb-3">
+              <!-- Label: Name -->
+              <label for="name" class="form-label">Name</label>
+              <!-- Input: Name -->
+              <input type="text" class="form-control" id="name" placeholder="Enter your name" required />
+            </div>
+            <!-- Form Group: Email -->
+            <div class="mb-3">
+              <!-- Label: Email -->
+              <label for="email" class="form-label">Email</label>
+              <!-- Input: Email -->
+              <input type="email" class="form-control" id="email" placeholder="Enter your email" required />
+            </div>
+            <!-- Form Group: Message -->
+            <div class="mb-3">
+              <!-- Label: Message -->
+              <label for="message" class="form-label">Message</label>
+              <!-- Textarea: Message -->
+              <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+            </div>
+            <!-- Button: Submit -->
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </form>
+        </div>
+        <!-- Column: Empty -->
+
+        <!-- Map -->
+        <div class="col-md d-none d-sm-block">
+          <div id="map" style="
+                height: 54vh;
+                width: 45vw;
+                margin-right: -60px;
+                margin-left: 60px;
+                border-radius: 10px;
+                border: solid gray 2px;
+              "></div>
+          <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+          <script>
+            var map = L.map("map").setView([30.198887, 71.468506], 13);
+
+            L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+              attribution:
+                '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+            }).addTo(map);
+
+            L.marker([30.198887, 71.468506])
+              .addTo(map)
+              .bindPopup("Multan, Pakistan")
+              .openPopup();
+          </script>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-5 text-white text-center position-relative" style="background-color: #0d0628;">
+    <p>&copy; 2023 Developer Industries</p>
+    <a href="#" class="position-absolute bottom-0 end-0 p-5" ><i
+        class="fas fa-arrow-alt-circle-up fa-2x"></i></a>
+  </footer>
+
+  <!-- Include Bootstrap Icons JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.0.0-alpha5/dist/js/bootstrap-icons.min.js"></script>
+</body>
+
+</html>
